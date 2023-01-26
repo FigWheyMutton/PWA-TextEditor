@@ -34,26 +34,18 @@ module.exports = () => {
         name: 'My Progressive Web App',
         short_name: 'MyPWA',
         description: 'My awesome Progressive Web App!',
-        background_color: '#ffffff',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: '/',
         publicPath: '/',
         crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 256, 384, 512], 
-            destination: path.join('assets', 'icons'), // multiple sizes
+            sizes: [96, 128, 192, 256, 384, 512],
+            destination: path.join('assets', 'icons'),
           },
-          {
-            src: path.resolve('src/images/logo.png'),
-            size: '1024x1024' // you can also use the specifications pattern
-          },
-          {
-            src: path.resolve('src/images/logo.png'),
-            size: '1024x1024',
-            purpose: 'maskable'
-          }
-        ]
+        ],
       })
     ],
 
